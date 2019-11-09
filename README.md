@@ -20,7 +20,6 @@ env = Environment(
 )
 
 template = env.from_string('password={% secret "password", path="database", mount="app1/secret" %}')
-
 result = template.render()
 print(result)
 
