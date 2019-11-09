@@ -20,6 +20,10 @@ env = Environment(
 )
 
 template = env.from_string('password={% secret "password", path="database", mount="app1/secret" %}')
+
+result = template.render()
+print(result)
+
 template = env.from_string('kubeconfig_file={% secret "kube_config", path="kubernetes/config", mount="secret", to_file="files/kube_config.txt" %}')
 result = template.render()
 print(result)
