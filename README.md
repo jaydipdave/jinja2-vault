@@ -46,6 +46,7 @@ The further usage the same as desribed in **Usage**.
 
 ## Todo
 [ ] Add some unit tests
+[_] Add some documentation
 
 ## Build
 To build and push the package:
